@@ -35,7 +35,7 @@ public class SJSwiftSideMenuController: UIViewController, UINavigationController
     private static var menuIcon_Left : UIImage = UIImage()
     private static var menuIcon_Right : UIImage = UIImage()
     
-    private static var navigator : UINavigationController! = nil
+    public static var navigator : UINavigationController! = nil
     public static var navigationContainer : UIViewController! = nil
     
     // left menu views

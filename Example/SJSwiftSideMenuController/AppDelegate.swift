@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rootVC = storyBoard.instantiateViewController(withIdentifier: "ViewController") as UIViewController
         
         SJSwiftSideMenuController.setUpNavigation(rootController: rootVC, leftMenuController: sideVC_L, rightMenuController: sideVC_R, leftMenuType: .SlideOver, rightMenuType: .SlideView)
-        
+        SJSwiftSideMenuController.navigator.setNavigationBarHidden(true, animated: false)
         SJSwiftSideMenuController.enableSwipeGestureWithMenuSide(menuSide: .LEFT)
         
         SJSwiftSideMenuController.enableDimbackground = true
